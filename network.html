@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>MMS 144 | Module 2: Data Models</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Module 2: Data Models</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="flat.html">Flat Files</a></li>
+						<li><a href="hierarchy.html">Hierarchy Model</a></li>
+						<li><a href="network.html" class="active">Network Model</a></li>
+						<li><a href="relational.html">Relational Model</a></li>
+						<li><a href="objectoriented.html">Object-oriented</a></li>
+						<li><a href="objectrelational.html">Object-relational</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Network Model</h1>
+							<p><b>Network Model</b> is one of the well-known DBMS Models along with the hierarchical and relational model. It was presented by Charles Bachman in 1969 and was formally defined by the Conference on Data Systems Languages (CODASYL in 1971 as a DBMS model permitting one-to-many or many-to-many data relationships.<br><br>
+							<b>Structure of a Network Model</b><br><br>
+								<a class="image left"><img src="images/network1.png" alt="" data-position="center" /></a><br>
+							The relationship between the owner and its members is called “set” which is the network model's basic data construct. Each set consists of at least two(2) types of record, an owner record and a member record. Having this member link to another set, perhaps another parent replaced the hierarchical tree with a graphical diagram as more and different nodes become connected forming a complex structure.</p>
+							<br><br>
+							<p><b>Sample of a Set becoming more complex</b><br><br>
+								<a class="image"><img src="images/network2.png" alt="" data-position="center" /> &nbsp; </a> &nbsp; <a class="image"><img src="images/network3.png" alt="" data-position="center" /></a>
+							</p>
+							<p><b>Major Strengths of Network Model</b><br>
+								<li>The ability to manage one-to-one and many-to-many relationships enabled data to become more related</li>
+								<li>Fast data access since there can be more than one path to the same record because of the linking relationships among nodes</li>
+								<li>Delivers conceptual simplicity and data independence with great flexibility among the information from the data files</li>
+								<li>Upholds data integrity because of the parent-child relationship. Modifications made to the owner record also reflect the member/s' records</li><br>
+							<p><b>Limitations in Network Model</b><br>
+								<li>Abundant parent-child relationships may form a system structure that is difficult to handle and maintain</li>
+								<li>Requires a very acquainted personnel that knows every point of the complex structure in order to modify it</li>
+								<li>Modifications must happen throughout the entire system as one change affects the other linked nodes</li>
+								<li>Structure dependent</li>
+							</p>
+							<p>
+								The fast and easy access of records caused by the enhanced association of data information of the Network model made it beneficial for mapping many-to-many relationships. The Network Model doesn't go far from the Hierarchical Model but was only the enhanced version of it.</p>
+								<div class="row">
+									<div class="col-6 col-12-medium">
+										<ul class="actions">
+											<li><a href="hierarchy.html" class="button small">Previous: Hierarchical Model</a></li>
+											<li><a href="relational.html" class="button primary small">Next: Relational Model</a></li>
+										</ul>
+									</div>
+								</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>MMS 144 2T 21-22 Group 1</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

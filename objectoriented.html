@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>MMS 144 | Module 2: Data Models</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Module 2: Data Models</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="flat.html">Flat Files</a></li>
+						<li><a href="hierarchy.html">Hierarchy Model</a></li>
+						<li><a href="network.html">Network Model</a></li>
+						<li><a href="relational.html">Relational Model</a></li>
+						<li><a href="objectoriented.html"class="active">Object-oriented</a></li>
+						<li><a href="objectrelational.html">Object-relational</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Object-oriented Model</h1>
+							<p><b>Object-oriented Model</b> model follows the concepts of object-oriented programming in visualizing relationships between data. There are times that the relational model has limited capabilities in handling complex data, so an object-oriented approach was devised for such instances. In contrast to a relational model, wherein data is stored in tables, the object-oriented model uses objects, which contain the data, its attributes, and methods.<br><br>
+							<b>History</b><br>
+							The roots of object-oriented databases can be traced from the early 1980s with the founding of the Orion Research Project at Microelectronics and Computer Technology Corporation in Austin, Texas, by Won Kim (Grehan, et. al). Then in 1991, the Object Data Management Group (ODMG) was founded and its purpose was to outline and propose standards and guidelines in object data management, the efforts of which was finally completed in 2001, and culminated with the group's disbandment shortly after.</p>
+							
+							<p><b>Concepts</b><br>
+							In the Object-Oriented Database System Manifesto (OODBMS), Atkinson et. al (1989) defined some mandatory characteristics that an OODB must possess.<br></p>
+							<ol type="1">
+								<li>It should be a DBMS and have the following features:</li>
+									<ul>
+										<li>Persistence</li>
+										<li>Secondary storage management</li>
+										<li>Concurrency</li>
+										<li>Recovery</li>
+										<li>Ad hoc query facility</li>
+									</ul>
+								<li>It should be an object-oriented system, and possess the following characteristics:</li>
+									<ul>
+										<li>Complex objects</li>
+										<li>Object identity</li>
+										<li>Encapsulation</li>
+										<li>Types or classes</li>
+										<li>Inheritance</li>
+										<li>Overriding combined with late binding</li>
+										<li>Extensibility</li>
+										<li>Computational completeness</li>
+									</ul>
+							</ol>
+
+
+							</p>
+							<p><b>How Object-Oriented Model Works</b><br>
+								<span class="image right"><img src="images/oomodel1.png" alt="" /></span>In an object-oriented (OO) data model, data is represented as an object which contains not only the data, but also its attributes and methods. A class is any group of objects that you can define, such as an Employee or Manager. For example, the class Employee would typically include the following attributes: Name, Employee_no, and Job_title, and Supervisor.<br><br>
+								The <b>method</b> is any set of executable instructions that is declared and initialized in a class, and which may cause changes in its state. For the class Employee, we could use the methods PROMOTE or TERMINATE. If we execute the method TERMINATE, then the corresponding instance of the class Employee will be deleted. If we choose PROMOTE, then it will be updated to the class Manager.<br><br>
+								<span class="image left"><img src="images/oomodel2.png" alt="" /></span>
+								This is where the concept of inheritance, an important feature of the object-oriented model, comes into play. As we can see, classes can have superclasses that form the parent of other classes. When we promote an instance of the Employee class to its subclass, Manager, it can acquire the attributes, traits, and methods of its new class while still retaining some or all of the attributes (and possibly the methods) of its previous class. This way there would be less redundant data since you do not need to create a new instance of a class anymore, and you can simply update an existing class.<br><br>
+								
+							<p><b>Advantages</b>
+								<ul class="alt">
+									<li>The OO model is useful for handling complex data and operations</li>
+									<li>Faster processing of data</li>
+									<li>Cost-efficient since inheritance allows repeated usage of code</li>
+								</ul>
+							</p>
+							<p><b>Disadvantages</b><br>
+								<ul class="alt">
+									<li>The OO model's capacity to process complex data might be too sophisticated for simpler tasks, thus limiting its possible applications</li>
+									<li>Not widely used compared to the relational model</li>
+									<li>Encapsulation limits its flexibility</li>
+								</ul>
+							</p>
+							<p><b>Conclusion</b><br>
+								The object-oriented model, while it presents wider possibilities in data manipulation, is still stymied by its limitations. Perhaps further developments down the line may yield improvements in implementation methods for the OO model, and open the door to more opportunities for its wider adoption.<br>
+							</p>
+							<div class="row">
+								<div class="col-6 col-12-medium">
+									<ul class="actions">
+										<li><a href="relational.html" class="button small">Previous: Relational Model</a></li>
+										<li><a href="objectrelational.html" class="button primary small">Next: Object-relational Model</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>MMS 144 2T 21-22 Group 1</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

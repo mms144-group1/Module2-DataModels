@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>MMS 144 | Module 2: Data Models</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Module 2: Data Models</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="flat.html" class="active">Flat Files</a></li>
+						<li><a href="hierarchy.html">Hierarchy Model</a></li>
+						<li><a href="network.html">Network Model</a></li>
+						<li><a href="relational.html">Relational Model</a></li>
+						<li><a href="objectoriented.html">Object-oriented</a></li>
+						<li><a href="objectrelational.html">Object-relational</a></li>
+						<li><a href="elements.html">Elements</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Flat Files</h1>
+							<p><b>Flat files</b> are generally in plain-text form, where each line holds only one record. A flat file can be a plain text file (e.g. csv or txt), or a binary file. Information stored in a flat file is generally alphanumeric, meaning plain numbers and letters, with little or no formatting. Relationships can be inferred from the data in the database, but the database format itself does not make those relationships explicit. The fields in the record are separated using delimiters such as tabs and commas and commonly appears in a tabular form. These tables provide a systematic way to access, manage, and change data.<br><br>
+							<a class="image right"><img src="images/flat1.png" alt="" data-position="center" /></a><br>Columns are known as a <b>field</b>. These columns each represent one dimension of the database.
+							<br><br><br>
+							<a class="image right"><img src="images/flat2.png" alt="" data-position="center" /></a><br>The first row of a flat file database contains the field name for each column, and each row after the first represents a single <b>record</b>. Each record contains the same type of information as the other rows in the flat file as defined by the columns that describe the type of data.<br>
+							<br>
+							<a class="image right"><img src="images/flat3.png" alt="" data-position="center" /></a><br>A single piece of information from the table is called an <b>item</b>.<br><br>
+							</p>
+							
+							<p><b>Comma-Separated Values (CSV)</b><br>
+								One of the most common delimited text files that is used for flat file databases. Each line/row is the record. Each record consists of fields/columns which are separated by commas. In simpler terms, a CSV file stores tabular data in plain text.<br><a class="image right"><img src="images/flat4.png" alt="" data-position="center" /></a><br>
+								To put into perspective, the above example of a table flat file database can be represented in CSV as follows:
+								<br>
+							</p>
+							<p><b>Advantages of a Flat File Database</b><br>
+								A flat file database consists of a single file with no structure relationship.<br>
+								<b><i>Ease of use</i></b> - flat file databases are easy to create and easy to maintain. It is simple to use as it does not require extensive expert knowledge of computers. Similarly, it is easy to retrieve and understand information from tables, as they are minimalistic and simple in design.<br>
+							<p><b>Disadvantage of Flat File Database</b><br>
+								<a class="image right"><img src="images/flat5.png" alt="" data-position="center" /></a><b><i>Redundancy</i></b> - as flat file databases are simple and only contain a single relational table, the biggest weakness to flat file databases is that data is often repeated as many times as new records are input. This could lead to input errors and inconsistencies.<br>
+								For example, if we were to add new items for a record in the previous example with the same Last Name and First Name, it would look like as follows:<br>
+							</p>
+							<p><b>What is it used for?</b><br>
+								Flat-file databases are still very useful for commonly accessed information. This could include simple name and address files, memberships, rosters, etc. Spreadsheets such as Microsoft Excel and Google Sheets can be used to create and edit simple flat-file databases.<br>
+								Being simple in structure, flat-file databases are widely used to store simple data that does not require multiple tables to represent. Their simplicity also makes it easier to use and access information for data warehouses or data lakes.<br>
+								<div class="row">
+									<div class="col-6 col-12-medium">
+										<ul class="actions">
+											<li><a href="hierarchy.html" class="button primary small">Next: Hierarchical Model</a></li>
+										</ul>
+									</div>
+								</div>	
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>MMS 144 2T 21-22 Group 1</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

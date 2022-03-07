@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>MMS 144 | Module 2: Data Models</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Module 2: Data Models</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="flat.html">Flat Files</a></li>
+						<li><a href="hierarchy.html" class="active">Hierarchy Model</a></li>
+						<li><a href="network.html">Network Model</a></li>
+						<li><a href="relational.html">Relational Model</a></li>
+						<li><a href="objectoriented.html">Object-oriented</a></li>
+						<li><a href="objectrelational.html">Object-relational</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Hierarchical Database</h1>
+							<p>The schema for <b>hierarchical databases</b> is defined by its tree-like organization, in which there is typically a root “parent” directory of data stored as records that links to various other subdirectory branches, and each subdirectory branch, or child record, may link to various other subdirectory branches.
+							The hierarchical database structure dictates that, while a parent record can have several child records, each child record can only have one parent record. Data within records is stored in the form of fields, and each field can only contain one value. Retrieving hierarchical data from a hierarchical database architecture requires traversing the entire tree, starting at the root node.<br><br>
+							<b>Let's see one example:</b><br>
+							Let's assume that we have a main directory which contains other subdirectories. Each subdirectory contains more files and directories. Each directory or file can be in one directory only i.e. it has only one parent.<br><br>
+							<a class="image"><img src="images/hierarchy1.png" alt="" data-position="center" /></a><br><br>
+							Here A is the main directory i.e. the root node. B1 and B2 are their child or subdirectories. B1 and B2 also have two children C1, C2 and C2, C3 respectively. They may be directories or other files. This depicts one-to-many relationships.
+							</p>
+							<p><b>Advantages</b>
+							<li>Data can be retrieved easily due to the explicit links present between the table structures</li>
+							<li>Referential integrity is always maintained i.e. any changes made in the parent table are automatically updated in a child table</li>
+							<li>Promotes data sharing</li>
+							<li>It is conceptually simple due to the parent-child relationship</li>
+							<li>Database security is enforced</li>
+							<li>Efficient with 1: N relationships</li>
+							<li>A clear chain of command or authority</li>
+							<li>Increases specialization</li>
+							<li>High performance</li>
+							<li>Clear result</li>
+							</p>
+							<p><b>Disadvantages</b>
+							<li>If the parent table and child table are unrelated then adding a new entry in the child table is difficult because additional entries must be added in the parent table</li>
+							<li>Complex relationships are not supported</li>
+							<li>Redundancy which results in inaccurate information</li>
+							<li>Change in structure leads to change in all application programs</li>
+							<li>M: N relationship is not supported</li>
+							<li>Lack of standards</li>
+							<li>Poor flexibility</li>
+							<li>Communication barriers</li>
+							<li>Organizational Disunity</li>
+							<li>Rigid structure</li>
+							</p>
+							<div class="row">
+								<div class="col-6 col-12-medium">
+									<ul class="actions">
+										<li><a href="flat.html" class="button small">Previous: Flat Files</a></li>
+										<li><a href="network.html" class="button primary small">Next: Network Model</a></li>
+									</ul>
+								</div>
+							</div>	
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>MMS 144 2T 21-22 Group 1</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>MMS 144 | Module 2: Data Models</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Module 2: Data Models</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="flat.html">Flat Files</a></li>
+						<li><a href="hierarchy.html">Hierarchy Model</a></li>
+						<li><a href="network.html">Network Model</a></li>
+						<li><a href="relational.html" class="active">Relational Model</a></li>
+						<li><a href="objectoriented.html">Object-oriented</a></li>
+						<li><a href="objectrelational.html">Object-relational</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Relational Model</h1>
+							<p><b>Relational Model</b> is the theoretical foundation of a relational database. It was introduced by E.F. Codd in 1970 to store and process data in a less restrictive manner, which were weaknesses of the database models that preceded it.<br><br>
+							By following the concept of relation in set theory, the relational model “provides the ability to relate records as needed rather than predefined when the records are first stored in the database” (Oppel, 2004). The relational model's logical schema and two-dimensional structure enable the interpretation of interrelated information.<br><br>
+							Using a relational database is beneficial because it is flexible, reduces redundancy and eases backup and recovery. The fact that databases based on the relational model are some of the most prominent and widely used types of databases today also make this model worth studying.<br></p>
+							<p><b>Data Strucutre</b>
+							<ol type="1">
+								<li><b>Key Terms</b></li><br>
+								<a class="image"><img src="images/relational1.png" alt="" data-position="center" /></a><br><br>
+								<ul>
+									<li><b>Relation</b></li>
+									The relation is what the table represents. Diranieh (2015) interchanges table with the term with entity, which is an instance of a table type. According to Ramakrishnan and Gehrke (n.d.), a relation is made up of an instance and a schema. These parts are represented by the heading and the body, as seen in the image above. The instance is the body and the schema is the heading. The <b>instance</b> is a tuple or a pair of attribute-value pairs. The <b>schema</b> specifies the name of the relation (i.e., Relation Name) and the attribute-domain pairs.
+									<li><b>Attribute</b></li>
+									“An attribute is used to define the record and the record contains a set of attributes” (Wyatt, 2013). It is represented by the column; a unit of storage that can contain values. “Every relation must have a <b>primary key</b>, that is a set of attributes that uniquely identify every tuple of the relation” (The University of Udine, n.d.). The number of attributes in a relation is called a <b>degree</b>. The <b>domain</b> is a set of values a column is allowed to contain.
+									<li><b>Tuple</b></li>
+									A tuple is a row of values. It is also known as a record and the instance of a relation. The number of tuples determine the <b>cardinality</b> of a relation.
+								</ul>
+								<li><b>Normalization</b></li>
+								Normal forms are structures that promote consistency and limit data redundancy. Normalization keeps information stored in strictly one place by splitting tables that contain redundant information. The normal forms were already discussed in Module 1, but you're free to watch the video below if you want to watch another demonstration of the normalization process.<br><br>
+
+								<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/UrYLYV7WSHM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+							</ol></p>
+							<p><b>Data Integrity</b><br>
+								To ensure the validity of the data in a relational model, one must understand the underlying mechanisms behind it. According to Diranieh (2015), those mechanisms are attribute integrity, entity integrity and referential integrity, which is a combined summary of properties and constraints. 
+								<ol type="1">
+									<li><b>Properties</b></li>
+									According to <a href= "https://www.cs.wcupa.edu/~zjiang/RDB_table.htm"> Rackspace Technology, Inc. </a>, a relational table has six properties:<br><br>
+									<ul>
+										<li>Values are atomic</li>
+										<li>Column values are of the same kind</li>
+										<li>Each row is unique</li>
+										<li>The sequence of columns is insignificant</li>
+										<li>The sequence of rows is insignificant</li>
+										<li>Each column must have a unique name</li>
+									</ul>
+									These properties are important to data integrity because they further the distinctions of the terms above, such as instance and schema. They also propel the idea that a sound table design only contains essential information.<br><br>
+	
+									<li><b>Constraints</b></li>
+									Constraints maintain the integrity of the relational model by subjecting all relations to a condition. There are different kinds of constraints, but it has three main categories: constraints inherent to the data model, constraints that can be directly expressed in schemas, and constraints that cannot be directly expressed in schemas (Raju, 2004).
+
+								</ol></p>
+								<div class="row">
+									<div class="col-6 col-12-medium">
+										<ul class="actions">
+											<li><a href="network.html" class="button small">Previous: Network Model</a></li>
+											<li><a href="objectoriented.html" class="button primary small">Next: Object-oriented Model</a></li>
+										</ul>
+									</div>
+								</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
